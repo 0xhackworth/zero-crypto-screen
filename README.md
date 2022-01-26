@@ -1,14 +1,12 @@
 # Credits
 
-Project is forked from dr-mod's zero-btc-screen.
+Project is originally forked from dr-mod's zero-btc-screen.
+This fork from shadowandy's zero-crypto-screen incorporates dr-mod's addition of support for epd2in13v3.
 
 # Enhancements
 
 Have made the following enhancements:
-* Changed to make use of coingecko api
-* Cycle through multiple cryptocurrencies
-* Right-aligned the price
-* Ability to change base currency to others instead of just usd
+* Added support for epd2in13v3 from dr-mod's repo
 
 
 
@@ -27,7 +25,7 @@ Bitcoin (or any other currency) stock price for your RPi Zero
 
 ### Screens
 
-* Waveshare eInk displays: epd2in13v2, epd2in13bv3
+* Waveshare eInk displays: epd2in13v2, epd2in13v3, epd2in13bv3
 * inkyWhat (Red, Black, White)
 * Virtual (picture)
 
@@ -89,6 +87,7 @@ currency                 : usd
 # Enabled screens or devices
 screens : [
     epd2in13v2
+#   epd2in13v3    
 #    epd2in13bv3
     picture
 #    inkyWhatRBW
@@ -97,6 +96,9 @@ screens : [
 # Configuration per screen
 # This doesn't make any effect if screens are not enabled above
 [epd2in13v2]
+mode : candle
+
+[epd2in13v3]
 mode : candle
 
 [epd2in13bv3]
