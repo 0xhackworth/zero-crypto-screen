@@ -1,6 +1,7 @@
 # Credits
 
 Project is originally forked from dr-mod's zero-btc-screen.
+
 This fork from shadowandy's zero-crypto-screen incorporates dr-mod's addition of support for epd2in13v3.
 
 # Enhancements
